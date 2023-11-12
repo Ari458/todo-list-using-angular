@@ -1,0 +1,19 @@
+<div>
+    <i>Todo List <sup>by Ari</sup></i><p><textarea cols="50" rows="1" [(ngModel)]="task"></textarea> <b (click)="addTask()"> +</b></p>
+</div>
+
+<div *ngFor="let task of taskList.slice().reverse(); let i = index">
+    <span class="task">
+      <p (click)="taskCreateOrDone(task)">
+        <img src="{{task.statusImage}}">
+      </p>
+      <ul class="{{task.status}}">
+        {{task.task}}
+        <i class="time">{{task.time}}</i>
+      </ul>
+      <div class="action">
+        <span class="edit" (click)="editTask(task)"><i>Edit</i></span>
+        <span class="del" (click)="delTask(taskList.length - 1 - i)"><i>Delete</i></span>
+      </div>
+    </span>
+</div>

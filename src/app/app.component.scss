@@ -1,0 +1,64 @@
+textarea{
+    // resize: none;
+}
+
+b{
+    font-size: 30px;
+}   
+
+i,b{
+    cursor: pointer;
+}
+
+i{
+
+    opacity: 0.5;
+}
+
+.taskCreated{
+    text-decoration: none;   
+}
+
+.taskDone{
+    text-decoration: line-through;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
+
+ul {
+    height: -20px; 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    word-wrap: break-word;
+  }
+
+.time{
+    cursor: none;
+}
+
+.action{
+    margin-left: 30px;
+    line-height: 35px;
+}
+
+.task{
+    border-bottom: 0.1px dashed rgb(190, 190, 190);
+}
+
+
+sup{
+    opacity: 0.5;
+}
